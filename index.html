@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Haoyu's Blog</title>
-</head>
-<body>
-<h1> My Tech Blog On GitHub</h1>
 
-</body>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Haoyuchen1992.github.io : Negative Margin -- A way to center the content" />
 
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Haoyuchen1992.github.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/haoyuchen1992">View on GitHub</a>
+
+          <h1 id="project_title">Haoyuchen1992.github.io</h1>
+          <h2 id="project_tagline">Negative Margin -- A way to center the content</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Example Code:</p>
+
+<pre><code>&lt;div class="content"&gt;
+    &lt;img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" width="200" height="100"&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>CSS</p>
+
+<pre><code>.Content {
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:550px;
+    height:350px;
+    margin-top:-190px;
+    margin-left:-275px;
+    padding:15px;
+}
+</code></pre>
+
+<p>Step One: Center the div but div center is not the same as body center</p>
+
+<pre><code>.Content {
+    position:absolute;
+    left:50%;
+    top:50%;
+</code></pre>
+
+<p>Step Two: Use negative margin to let the div center overlap with body center:
+Fiddle example <a href="http://jsfiddle.net/chenhaoyu/ZLn9s/1/">Final Example</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
